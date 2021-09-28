@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-	</head>
-	<body>
 		<?php
 		//Import PHPMailer classes into the global namespace
 		//These must be at the top of your script, not inside a function
@@ -65,5 +59,3 @@
 			echo "Lỗi rồi, đéo đăng nhập được: {$mail->ErrorInfo}";
 		}
 		?>
-	</body>
-</html>
