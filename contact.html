@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/fontawesome/css/all.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+		<link rel="manifest" href="/assets/images/site.webmanifest">
+		<title>Contact</title>
+		<script src="assets/fontawesome/js/all.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark sh_navbar navbar-danger" id="ftco-navbar">
+			<div class="container-fluid">		
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="fa fa-bars"></span> Menu
+				</button>
+				<div class="collapse navbar-collapse" id="ftco-nav">
+					<ul class="navbar-nav m-auto">
+						<li class="nav-item mr-5"><a href="index.html" class="nav-link hover-underline-animation">Home</a></li>
+						<li class="nav-item mr-5"><a href="about.html" class="nav-link hover-underline-animation">About</a></li>
+						<li class="nav-item mr-5"><a href="services.html" class="nav-link hover-underline-animation">Services</a></li>
+						<li class="nav-item active"><a href="contact.html" class="nav-link hover-underline-animation">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div class="form h-100 p-4 mt-5">
+                <form class="mb-5" method="post" action="forms/contact.php">
+                    <div class="row">
+                        <div class="col-md-6 form-group mb-5">
+                            <label for="" class="col-form-label">Name *</label>
+                            <input type="text" class="form-control" name="fullname" id="name" placeholder="Your name">
+                        </div>
+                            <div class="col-md-6 form-group mb-5">
+                            <label for="" class="col-form-label">Email *</label>
+                        <input type="text" class="form-control" name="cmail" id="cmail"  placeholder="Your email">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 form-group mb-4">
+                            <label for="" class="col-form-label">Subject *</label>
+                            <input type="text" class="form-control" name="subject" id="subject"  placeholder="Title your message">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 form-group mb-4">
+                            <label for="message" class="col-form-label">Message *</label>
+                            <textarea class="form-control" name="message" id="message" cols="30" rows="4"  placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                            <div class="col-md-12 form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary rounded-0">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</body>
+</html>

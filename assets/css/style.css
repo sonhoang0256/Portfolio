@@ -1,0 +1,195 @@
+ {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body { 
+    background: black;
+	background-size: cover;
+   	min-height: 100vh;
+}
+.sh_navbar {
+	background-color:black;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-weight: 800;
+} 
+.avatar {
+	text-align: center;
+}
+.avatar img {
+	margin-top: 5%;
+	width: 200px;
+	height: 200px;
+}
+.name {
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+}
+.text-box {
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+	width: 100%;
+}
+.fixed-text {
+	color: white;
+	display: inline-block;
+}
+.animated-text {
+	display: inline-block;
+}
+.animated-text span{
+	position: relative;
+	color: lightcoral;
+}
+.animated-text span:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 2px;
+	height: 100%;
+	border-left: 2px solid lightcoral;
+	right: -2px;
+	background: black;
+	animation: 4s textType;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(15);
+	animation-fill-mode: backwards;
+}
+@keyframes textType {
+	0%{
+		left:0;
+	}
+	20%{
+		left: 40%;
+	}
+	40%{
+		left: 60%;
+	}
+	60%{
+		left: 80%;
+	}
+	80%{
+		left: 100%;
+	}
+	100%{
+		left: 0;
+	}
+}
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color:lightcoral;
+  }
+  
+  .hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: lightcoral;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
+/* ABOUT */
+.profile-box {
+	margin-top: 10%;
+}
+.profile-text {
+	color: white;
+}
+.fa-chevron-circle-right {
+	color: lightcoral;
+}
+.tags-bold {
+	font-weight: 700;
+	color:lightcoral;
+}
+.career {
+	color: lightcoral;
+	font-weight: 800;
+}
+.avatar-profile img {
+	margin-top: 5%;
+	width: 300px;
+	height: 300px;
+	border: 8px solid lightcoral;
+	text-align: center;
+}
+
+/*CONTACT*/
+.form-control {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid lightcoral;
+	border-radius: 0px !important;
+	outline: 0;
+}
+  .col-form-label {
+	color:lightcoral;
+	font-size: 13px; }
+  
+  .btn, .form-control{
+	height: 45px; }
+
+  .btn {
+	border: none;
+	border-radius: 0;
+	font-size: 12px;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+}
+	.btn.btn-primary {
+	  background: lightcoral;
+	  color: #fff;
+	  padding: 15px 20px; }
+	.btn:hover {
+	  color: #fff; } 
+  label.error {
+	font-size: 12px;
+	color: red; 
+}
+
+/*SERVICES*/
+.service-box {
+	color: white;
+    padding: 5em 3rem 0 0;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.service-box .ico-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.ico-circle {
+    height: 80px;
+    width: 80px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+	margin-bottom: 1em;
+    text-align: center;
+    box-shadow: 0 0 0 10px #ffffff;
+}
+.ico-circle:hover {
+	color: black;
+	background-color:white;
+	box-shadow: 0 0 0 10px lightcoral;
+	transition: 0.4s;
+}
+.s-title {
+	color: lightcoral;
+}
